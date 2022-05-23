@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Yash's Portfolio
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <link href="portfolio.css" rel="stylesheet">
+       <link rel=“icon” href="favicon.png" type=“image/x-icon”><link>
+
+
+
+    </head>
+
+    <body>
+
+        <div class="pimg1">
+            <div id="ptext">
+                 <h1 class="heading"> Hello there! I'm Yash, an aspiring Frontend Web Developer </h1>
+                 <div class="top-buttons">
+                    <button id="top-button1" onclick="contact()">Contact</button>
+                    <button id="top-button2" onclick="education()">Education</button>
+                    <button id="top-button3" onclick="projects()">Projects</button>
+                </div>
+            </div>
+        </div>
+        <h2 id="skill-title">My skills </h2>
+        <div class = "skills">
+            <div id = "skill-1">
+                <img id = "skill-img-1" src = "html-css-js.png">
+                <h3>The essentials - HTML, CSS, Javscript</h3>
+            </div>
+            <div id = "skill-2">
+                <picture id = "skill-img-2">
+                    <source media="(min-width:780px)" srcset="reactandbootstrap.png">
+                    <img src="reactandbootstrap_2.png" alt="React and Bootstrap" id = "skill-img-2">
+                  </picture>
+                <h3>The frameworks - Bootstrap CSS and React.JS</h3>
+            </div>
+        </div>
+
+        <h2 class = "project-scroll" id="skill-title"> Projects </h2>
+
+        <div class="projects">
+            <div class="project-1">
+                <div class="project-1-text">
+                    <h2 id="project-title">Introduction to Formula 1 for beginners</h2>
+                    <h3 id="project-text">Skills covered - React.JS, Bootstrap CSS, Vanilla CSS</h3>
+                    <button id="project-1-button" onclick="f1()">Go to project</button>
+                    <button id="project-1-button" onclick="f12()">Go to code</button>
+                </div>
+                <div class="project-1-pic">
+                    <img id="project-1-pic" src = "f1-2022.png">
+                </div>
+            </div>
+            <div class="project-1">
+                <div class="project-1-text">
+                    <h2 id="project-title">Converting one currency to another</h2>
+                    <h3 id="project-text">Skills covered - React.JS, Bootstrap CSS, API handling in JS, React Router</h3>
+                    <button id="project-1-button" onclick="curr()">Go to project</button>
+                    <button id="project-1-button" onclick="curr2()">Go to code</button>
+                </div>
+                <div class="project-1-pic">
+                    <img id="project-1-pic" src = "currencies.png">
+                </div>
+            </div>
+            <div class="project-1">
+                <div class="project-1-text">
+                    <h2 id="project-title">Login App with private profile</h2>
+                    <h3 id="project-text">Skills covered - React.JS, Vanilla JS, React Router with private routes</h3>
+                    <button id="project-1-button" onclick="login()">Go to project</button>
+                    <button id="project-1-button" onclick="login2()">Go to code</button>
+                </div>
+                <div class="project-1-pic">
+                    <img id="project-1-pic" src = "login.png">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="education-scroll" id="skill-title"> Education </h2>
+        <div class="projects">
+            <div class="project-1 e" id="education-background">
+                <div class="project-1-text">
+                    <h2 id="project-title">Stanford University, Stanford, USA</h2>
+                    <h3 id="project-text">Master of Science</h3>
+                </div>
+                <div class="project-1-pic-e">
+                    <img id="project-1-pic-e" src = "stanford.png">
+                </div>
+            </div>
+            <div class="project-1 e">
+                <div class="project-1-text">
+                    <h2 id="project-title">Indian Institute of Technology (IIT), Kharagpur</h2>
+                    <h3 id="project-text">Bachelor of Technology</h3>
+                </div>
+                <div class="project-1-pic-e">
+                    <img id="project-1-pic-e" src = "iitkgp.png">
+                </div>
+            </div>
+        </div>
+
+        <div class = "contact">
+            <h3>
+                You may contact me here : 
+            </h3>
+                <div class="contact-images">
+                    <img id = "sms-img" src="sms.png" onclick="smsme()">
+                    <img id = "mail-img" src="mail.png" onclick="mailme()">
+                </div>
+        </div>
+
+
+
+        <!-- <h1 class="heading"> Hello there! I'm Yash, an aspiring Frontend Web Developer </h1>
+
+        <button href="#contact" class="">Contact</button>
+
+        <h2> My skills </h2>
+
+        <h2> My projects </h2>
+
+        <h2>You can contact me by <a href="mailto:yash.m.chandnani@gmail.com">clicking here</a></h2> -->
+
+
+
+            <script src="portfolio.js"></script>
+    </body>
+</html>

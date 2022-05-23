@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #FECD45;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.contact {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vmin;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#contact-button {
+    border: none;
+    font-size: 4vmin;
+    border-radius: 10%/25%;
+    background-color: #FECD45;
+    color: white;
+}
+
+
+@media only screen 
+and (max-device-width : 780px)
+{
+    #contact-button {
+    font-size: 4vmax;
+    }
+    .contact {
+    font-size: 4vmax;
+    }
+}
+#contact-button:hover {
+    content: "Go!";
+    transition: ease-out 2s;
+}
+
+#contact-button:active {
+    background-color: white;
+}
+
+.pimg1 {
+    margin-top: 0;
+    background-image:url("./portfolio.jpg") ;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#ptext {
+    background-color: #FECD45;
+    font-size: 4vmin;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:35%;
+    padding-bottom: 3vmin;
+    padding-top: 3vmin;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+}
+
+#top-button1, #top-button2, #top-button3 {
+    background-color: #2568FB;
+    font-size: 5vmin;
+    border: 0;
+    color:white;
+    padding: 0.2em;
+    margin: 0.3em 0.4em 0.1em 0;
+    box-shadow: 0 0.3em 0 0 #123472;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2em;
+}
+
+.top-buttons:active {
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+#top-button1 {
+    border-top-left-radius: 10% 35%;
+    border-bottom-left-radius: 10% 35%;
+}
+
+#top-button3 {
+    border-top-right-radius: 10% 35%;
+    border-bottom-right-radius: 10% 35%;
+}
+
+#top-button1:active, #top-button2:active, #top-button3:active {
+    box-shadow: 0 0.1em 0 #123472;
+    margin-top: 0.4em;
+    margin-bottom: 0em;
+    transition: 100ms;
+}
+
+.skills {
+    padding-top: 5vh;
+    background-color: #FECD45;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#skill-1, #skill-2 {
+    text-align: center;
+    font-size: 3vmin;
+    margin-top: 0;
+    transition: 3s all ease;
+}
+
+#skill-1.active {
+    opacity: 1;
+}
+
+#skill-2.active {
+    opacity: 1;
+}
+
+
+
+#skill-title {
+    background-color: #FECD45;
+    margin: 0;
+    font-size: 5vmin;
+    padding-top: 5vh;
+    padding-left: 1vw;
+    border: 0;
+}
+
+.projects {
+    background-color: #FECD45;
+    color:white;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.project-1.e {
+    color: black;
+}
+
+.project-1.e:hover {
+    background-color: aqua;
+}
+
+@media only screen 
+and (max-device-width : 780px) {
+
+.project-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border : black solid 0.5em;
+    width: 90vw;
+    margin: 5vmin 5vmin;
+    padding : 5vw 5vw;
+    border-radius: 10%/10%;
+    flex-wrap: flex;
+    box-sizing: border-box;
+    background-color: #2568FB;
+    flex-direction: column;
+    color: white;
+}
+
+.project-1-pic {
+    width: 80vw;
+    padding-bottom: 5vh;
+
+}
+
+#project-1-pic {
+    width:100%;
+    border-radius: 10%/25%;
+}
+
+.project-1-pic-e {
+    height: 30vh;
+}
+
+#project-1-pic-e {
+    height: 100%;
+}
+
+.project-1-text {
+    padding-bottom : 2vh;
+    text-align: center;
+}
+
+#project-title {
+    font-size: 4vmax;
+}
+
+#project-text {
+    font-size: 3vmax;
+}
+
+#project-1-button {
+    border: 0;
+    background-color: #FECD45;
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    margin-bottom: 2vmin;
+    padding: 1px;
+    border: #2568FB solid 0.5vmin;
+}
+
+#project-1-button:hover {
+    background-color: white;
+    border: red solid 0.5vmin;
+}
+
+#project-1-button:active {
+    background-color: white;
+    border: red solid 0.5vmin;
+}
+
+.project-1.e {
+    color: black;
+    background-color: aqua;
+}
+
+}
+
+@media only screen 
+and (min-device-width : 780px) {
+
+.project-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90vw;
+    margin: 5vmin 5vmin;
+    padding : 5vw 5vw;
+    border-radius: 10%/25%;
+    flex-wrap: flex;
+    box-sizing: border-box;
+    background-color: #2568FB;
+    box-shadow: 0 0 0.5em 0.3em #FECD45;
+}
+
+.project-1-pic {
+    width: 50vw;
+}
+
+#project-1-pic {
+    width:100%;
+}
+
+.project-1-pic-e {
+    height:40vh;
+}
+
+#project-1-pic-e {
+    height: 100%;
+}
+
+.project-1-text {
+    padding : 0;
+    padding-right: 2vw;
+    text-align: center;
+    max-width: 30vw;
+}
+
+#project-title {
+    font-size: 4vmin;
+}
+
+#project-text {
+    font-size: 3vmin;
+}
+
+#project-1-button {
+    border: 0;
+    background-color: #FECD45;
+    font-size: 4vmin;
+    border-radius: 10%/30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    margin-bottom: 2vmin;
+    border: #FECD45 solid 0.5vmin;
+}
+
+#project-1-button:hover {
+    border: red solid 0.5vmin;
+}
+
+#project-1-button:active {
+    border: red solid 0.5vmin;
+}
+}
+
+@media only screen 
+and (min-device-width : 120px) 
+and (max-device-width : 780px) {
+    #skill-1, #skill-2 {
+        width: 80vw;
+        margin-bottom: 4vmin;
+}
+#skill-img-1, #skill-img-2  {
+    width:100%;
+}
+
+
+
+}
+
+
+
+@media only screen 
+and (min-device-width : 780px) 
+and (max-device-width : 1080px) {
+    #skill-1, #skill-2 {
+        width: 40vw;       
+}
+#skill-img-1, #skill-img-2  {
+    width:100%;
+    height:60%;
+}
+
+
+
+}
+
+@media only screen 
+and (min-device-width : 1080px)  {
+    #skill-1, #skill-2 {
+        width: 30vw;
+    }
+#skill-img-1, #skill-img-2 {
+    width:100%;
+    height:60%;
+}
+
+
+}
+
+.project-1:hover {
+    box-shadow: 0 0 0.5em 0.5em black;
+    color: white;
+    transition: all 300ms ease-out;
+    background: rgb(171,0,255);
+    background: linear-gradient(20deg, rgba(171,0,255,1) 0%, rgba(7,19,241,1) 82%);
+}
+
+.contact-images {
+    display: flex;
+}
+
+@media only screen 
+and (min-device-width : 780px) {
+
+#sms-img {
+    width: 15vmin;
+    margin-right: 10vw;
+    padding: 0.5em;
+}
+
+#sms-img:hover {
+    box-shadow: 0 0 0.5em 0 black;
+    transition: 200ms;
+}
+
+
+#mail-img {
+    width: 15vmin;
+    padding: 0.5em;
+}
+
+#mail-img:hover {
+    box-shadow: 0 0 0.5em 0 black;
+    transition: 200ms;
+}
+
+
+}
+
+@media only screen 
+and (max-device-width : 780px) {
+
+#sms-img {
+    width: 30vmin;
+    margin-right: 10vw;
+    padding: 0.5em;
+}
+
+#sms-img:hover {
+    box-shadow: 0 0 0.5em 0 black;
+    transition: 200ms;
+}
+
+
+#mail-img {
+    width: 30vmin;
+    padding: 0.5em;
+}
+
+#mail-img:hover {
+    box-shadow: 0 0 0.5em 0 black;
+    transition: 200ms;
+}
+
+
+}
